@@ -1,0 +1,11 @@
+{
+  "name": "heroku-vue",
+  "description": "Vue app on Heroku",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
