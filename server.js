@@ -24,6 +24,7 @@ var instance = axios.create({
 
 app.get('/search/:query', function(req, res) {
   const url = 'gallery/search/top/0/?' + querystring.stringify({ q: req.params.query });
+  console.log(instance,url);
   instance.get(url)
     .then(function (result) {
       res.send(result.data.data.filter(item => !item.is_album && !item.nsfw && !item.animated));
